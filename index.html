@@ -907,10 +907,11 @@ function openNav()
 	if(j>0)
 	{
 		document.body.scrollTop = 0;
-		snav.style.margin="0 -250px 0 0";
-		body.style.webkitTransform="translate3d(260px, 0, 0)";
+		
+		body.style.webkitTransform="translate3d(0, 0, 0)";
 		//snav.style.webkitTransform="translate3d(0, 0, 0)";
 		j=0;
+		snav.style.margin="0 -250px 0 0";
 		scrollFunction();
 		window.onscroll = scrollFunction;
 	}
