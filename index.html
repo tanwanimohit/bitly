@@ -822,7 +822,7 @@
 		</div>
     </div>
     <div class="videodiv" >
-		<video controls="controls" id="player" tabindex="0" poster="thumb.jpg" autoplay="autoplay" loop="loop" src="https://player.vimeo.com/video/170191890?autoplay=1" width="100%" >
+		<video controls="controls" id="player" tabindex="0" poster="thumb.jpg" autoplay="autoplay" loop="loop"  width="100%" >
 		</video>
 		<button>LEARN MORE</button>
 	</div>
@@ -913,8 +913,9 @@ function openNav()
 	{
 		document.body.scrollTop = 0;
 
-		body.style.webkitTransform="translate3d(0, 0, 0)";
+		body.style.webkitTransform="";
 		snav.style.webkitTransform="translate3d(250px, 0, 0)";
+		document.getElementById("myTopnav").style.height="100px";
 		j=0;
 		snav.style.margin="0 -250px 0 0";
 		snav.style.display="none";
