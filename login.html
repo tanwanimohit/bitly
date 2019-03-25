@@ -1,0 +1,150 @@
+<html>
+<head>
+    <title>Bitly. The Power of the Link.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="icon.png" />
+<style>
+    body,center
+    {
+        padding: 0px;
+        margin: 0px;
+		background:#f2f6f7;
+		font-family:verdana;
+    }
+    .login
+    {
+		margin-top:3%;
+        height:80%;
+        margin-left:auto;
+        margin-right:auto;
+        width:415px;
+		display : flex;
+		flex-direction:column;
+		align-items:center;	
+		border: 1px solid #e3e6e7;
+		background:#fff;
+    }
+	.login img 
+	{
+		padding:30px;
+		margin-top:10px;
+	}
+	.login h3
+	{
+		font-weight:normal;
+		padding:0px;
+		margin:0px;
+	}
+	.login .maint
+	{
+		font-size:14px;
+	}
+	@media screen and (max-width:415px)
+	{
+		.login
+		{
+			height:100%;
+			width:100%;
+			margin:0px 0px;
+			padding:0;
+			border:0px;
+		}
+	}
+	.login .links
+	{
+		display:flex;
+	}
+	.links button
+	{
+		border-width:0px;
+		margin:10px;
+		background:transparent;
+		padding-left:25px;
+		border:1px solid  blue;
+		padding-right:25px;
+		padding : 7px 25px;
+		border-radius:3px;
+		text-align:center;
+	}
+	.links button:hover
+	{
+		
+	}
+	.links img
+	{
+		padding:0px;
+		margin:auto;
+	}
+	.other
+	{
+		color:#8f989d;
+	}
+	.text
+	{
+		text-decoration:none;
+		width:250px;
+		border: 1px solid #e3e6e7;
+		color:#a3aaae;
+		border-radius:4px;
+		background:white;
+		padding:11px 10px;
+		margin-bottom:15px;
+	}
+	button
+	{
+		background:#ee6123;
+		padding:11px 100px;
+		border-width:0;
+		color:white;
+		font-weight:bold;
+		border-radius:4px;
+	}
+	.ft
+	{
+		font-size:12px;
+		color:#a3aaae;
+	}
+	.ft a
+	{
+		color:#ee6123;
+		text-decoration:none;
+	}
+	.ft a:hover
+	{
+		text-decoration:underline;
+		color:gray;
+	}
+	.finalt
+	{
+		font-size:12px;
+		color:#ee6123;
+		text-decoration:none;		
+	}
+	finalt:hover
+	{
+		text-decoration:underline;
+		color:gray;
+	}
+</style>
+</head>
+<body>
+    
+    <div class="login">
+		<img src="footer_logo.png" height="36" width="79"/>
+		<h3>SIGN IN & START SHARING</h3>
+		<p class="maint">SIGN IN WITH:</p>
+		<div class="links">
+			<button onclick=""><img src="google.png" height="20px"/></button>
+			<button onclick=""><img src="fb.png" height="20px"/></button>
+			<button onclick=""><img src="twitter.png"height="20px"/></button>
+		</div>
+		<p class="other">OR</p>
+		<input class="text" type="text" placeholder="Email address or username" >
+		<input class="text" type="text" placeholder="Password" >
+		<button>SIGN IN</button>
+		<p class="ft">Don't Have an Account? <a href="">Sing Up Now</a></p>
+		<a class="finalt" href="">Sign In with SSO</a>
+    <div>
+    
+</body>
+</html>
