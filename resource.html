@@ -1,0 +1,1057 @@
+<html>
+<head>
+    <title>Bitly | URL Shortener, Custom Branded URLs, API &amp; Link Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="icon.png" />
+<style>
+    body,html
+    {
+        margin: 0px;
+        padding: 0px;
+		width:100%;
+		font-family:verdana;
+    }
+	
+	.header
+	{
+	
+	}
+    .fthead
+    {
+       
+        display:flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items:center;
+		text-align:center;
+		
+		padding:100px;
+		padding-bottom:20px;
+    }
+	.fthead h1
+	{
+		color:#2a2e30;
+		font-weight:normal;
+		font-size:36px;
+	}
+	.fthead h3
+	{
+		width:67%;
+		color:#707a80;
+		font-weight:normal;
+	}
+    .feature
+    {
+        justify-content: center;
+        flex-wrap: wrap;
+		padding:50px;	
+        display: flex;
+    }
+    .features
+    {
+        display:flex;
+		flex-direction:column;
+		align-items:center;
+        width: 20%;
+        min-width: 300px;
+        margin: 3%;
+		
+		padding:0px;
+		justify-content:center;
+		text-align:center;
+		
+    }
+	.features_v2
+    {
+        display:flex;
+		flex-direction:column;
+		align-items:center;
+        width: 20%;
+        min-width: 300px;
+        margin: 2%;
+		border:1px #dde0e2 solid;
+		padding:0px;
+		justify-content:center;
+		text-align:center;
+		
+    }
+	.features img
+	{
+		margin:0px;
+		padding:0px;
+		
+	}
+	.features_v2 .img
+	{
+		margin:0px;
+		border:1px #dde0e2 solid;
+		padding:0px;
+		
+	}
+	.features_v2 .name
+	{
+		margin:10px;
+		color:#61b3de;
+		padding:0px;
+		font-weight:bold;
+	}
+	.features_v2 a
+	{
+		text-decoration:none;
+	}
+	.features_v2 a:hover
+	{
+		text-decoration:underline;
+	}	
+	.features_v2 .info
+	{
+		color:#464c50;
+		margin:0px;
+		
+		padding:20px;
+		font-weight:bold;
+	}
+	.features h3
+	{
+		margin:0px;
+		color:#4f565a;
+		padding:0px;
+		font-weight:normal;
+	}
+	.features p
+	{
+		color:#a3aaae;
+	}
+	.features a
+	{
+		text-decoration:none;
+		color:orange;
+	}
+	.features a:hover
+	{
+		text-decoration:underline;
+	}
+	.feature button
+	{
+		background:transparent;
+		padding:5px;
+		border-radius:50px;
+		padding:5px 20px;
+		margin:5px;
+	}
+    .videodiv
+    {
+		display:flex;
+		align-items:center;
+		justify-content: center;
+		flex-direction:column;
+    }
+	.videodiv video
+	{
+		min-width:300px;
+		max-width:800px;
+	}
+	.videodiv button
+	{
+		background:#e45212;
+		padding:20px 40px;
+		border-radius:5px;
+		color:white;
+		margin:50px;
+		
+		border-width:0;
+	}
+    .analytics
+    {
+        background-color: #0e3042;
+        height: 20%;
+        display:flex;
+		flex-direction:column;
+		align-items:center;
+		padding-top:20px;
+		
+    }
+	.analytics h1
+	{
+		
+		color:white;
+		background:#e45212;
+		width:auto;
+		text-align:center;
+		font-size:48px;
+		border-radius:5px;
+	}
+	.analytics h2
+	{
+		font-weight:normal;
+		color:white;
+		text-align:center;
+		padding:0px;
+	}
+	.analytics button
+	{
+		background:#e45212;
+		padding:20px 60px;
+		border-radius:5px;
+		color:white;
+		
+		
+		border-width:0;
+	}
+    .partners
+    {
+        background-color : #eff7fc;
+        height: 38%;
+		padding:0px;
+		margin:0;
+		
+    }
+    .reviews
+    {
+        display:flex;
+		flex-direction:column;
+		align-items:center;
+		text-align:center;
+       padding:30px;
+	   
+    }
+	
+	.reviews .mains
+	{
+		width:60%;
+		font-size:22px;
+		color:#e45212;
+	}
+	.reviews .name
+	{
+		font-size:12px;
+		color:#a3aaae;
+		font-weight:bold;
+		line-height:0px;
+	}
+	.reviews .pos
+	{
+		font-size:15px;
+		line-height:0px;
+		color:#a3aaae;
+	}
+	@media screen and (max-width:750px)
+	{
+		.reviews .mains
+		{
+			width:90%;
+			font-size:15px;
+		}
+		.reviews .pos
+		{
+			font-size:12px;
+			line-height:0px;
+			color:#a3aaae;
+		}
+	}
+    .footer
+    {
+        display:flex;
+		align-items:center;
+		//justify-content:center;
+		flex-direction:column;
+        
+    }
+	.footer img
+	{
+		padding:20px;
+	}
+	.footer .links
+	{
+		display:flex;
+		justify-content:center;
+	}
+	.footer .social
+	{
+		display:flex;
+		justify-content:center;
+		
+	}
+	.footer p
+	{
+		color:#a3aaae;
+		font-size:12px;
+	}
+	.footer .social img
+	{
+		padding:5px;
+	}
+	
+	@media screen and (max-width:700px)
+	{
+		.footer 
+		{
+			
+			padding:5px;
+		}
+	}
+	@media screen and (max-width:880px )
+	{
+		.footer img
+		{
+			padding-left:2px;
+		}
+		.footer .links
+		{
+			flex-direction:column;
+		}
+		.footer 
+		{
+			align-items:flex-start;
+			padding:50px;
+		}
+		.footer .social img
+		{
+			padding:3px;
+		}
+		.footer .links a
+		{
+			margin-top:2px;
+			font-weight:bold;
+			font-size:12px;
+			padding:1px;
+			color:#a5adb1;
+			text-decoration:none;
+		}
+	}	
+	.links a
+	{
+		margin-top:20px;
+		font-weight:bold;
+		font-size:12px;
+		padding:10px;
+		color:#a5adb1;
+		text-decoration:none;
+	}
+	.links a:hover
+	{	
+		color:#a5adb9;
+	}
+	.topnav {
+		 display : flex;
+		 justify-content: center;
+		 margin-left: auto;
+		 margin-right: auto;
+		 height:100px;
+		 background:#e45212;
+		 z-index:1000;
+	}
+
+	.topnav a {
+	  float: left;
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 40px 16px;
+	  text-decoration: none;
+	  font-size: 13px;
+	  font-weight:bold;
+	  border-top:3px solid transparent;
+	}
+
+	.topnav a img
+	{
+		display:inline-block;
+	}
+
+	.topnav a:hover {
+	  border-top:3px solid #fff;
+	  
+	}
+
+	.topnav .icon {
+	  display: none;
+	}
+	.buttonhead
+	{
+		border:0px;
+		color:#0e3042;
+		font-weight:bold;
+		border-radius:2px;
+		background:white;
+		height:40px;
+		padding:0px 30px;
+		margin-top:30px;
+		margin-bottom:30px;
+		margin-right:30px;
+		margin-left:30px;
+	}
+	
+	@media screen and (max-width:500px)
+	{
+		.buttonhead
+		{
+			padding-left:10px;
+		}	
+		.header
+		{
+			
+		}
+		.analytics h1
+		{
+			font-size:20px;
+		}
+		analytics h2 
+		{
+			font-size:12px;
+		}
+	}
+	
+	@media screen and (max-width:750px)
+	{
+		.header
+		{
+			
+			
+		}
+	}
+	
+	@media screen and (max-width: 900px) {
+		
+		
+		
+	  .topnav
+	  {
+		padding-left:0px;
+		justify-content: left;
+		height:80px;
+		background:#e45212;
+	  }
+	  .topnav a
+	  {
+		padding: 20px 10px;
+	  }
+	  
+	  .buttonhead
+	  {
+		background:transparent;
+		color:white;
+		display:block;
+		float:right;
+		margin-left:auto;
+		margin-right:0px;
+		self-align:right;
+	  }
+	  .topnav a:not(:first-child) {display: none;}
+	  .topnav .icon {
+		float: right;
+		display:block;
+		margin-right:10px;
+		margin-top:20px;
+		padding:5px;
+		border:1px solid white;
+		display: block;
+		border-radius:2px;	
+	  }
+
+
+	}
+	
+	nav{
+		position:fixed;
+		top:0;
+		right:0;
+		width:250px;
+		height:100%;
+		margin:0 -250px 0 0;
+		-webkit-transform:translate3d(250px, 0, 0);
+	}
+	nav ul{
+		width:250px;
+		height:100%;
+		padding:0;
+		margin:0;
+		list-style:none;
+		background:#0e3042;
+		overflow:hidden;
+	}
+	nav li{
+		margin:0;
+	}
+	nav a{
+		color:#fff;
+		font-size:1em;
+		font-family:'helvetica neue', helvetica, arial, sans-serif;
+		text-decoration:none;
+		display:block;
+		padding:12px 15px;
+		font-weight:300;
+		letter-spacing:2px;
+		border-bottom:1px solid #fff;
+	}
+	
+	nav a:hover{
+		background:#111;
+	}
+
+	.main
+    {
+		display : flex;
+		justify-content: center;
+		align-items:center;
+        width:100%;
+		flex-direction:column;
+		height:82%;
+		color:white;
+		
+    }
+	
+	.main h1
+	{
+		font-size:45px;
+		padding:0px;
+		width:80%;
+		text-align:center;
+		font-weight:normal;
+	}
+	.main h3
+	{
+		padding:0px;
+		text-align:center;
+		width:70%;
+		font-weight:normal;
+		
+	}
+	.main a
+	{
+		color:#61b3de;
+		text-decoration: none; 
+	}
+	.main a:hover
+	{
+		text-decoration: underline; 
+	}
+	.searchbar
+	{
+		display:flex;
+		width:100%;
+		margin-top:10px;
+		justify-content:center;
+	}
+	.searchbar .shorten-input{
+		width:70%;
+		max-width:650px;
+		height:50px;
+		padding:14.4px 23px;
+		font-size:13px;
+		font-weight:200;
+		color:#7f898e;
+		line-height:32px;
+		margin:0px;
+		border-width:0;
+		float: left;
+		box-shadow:0 0 0 1px #fff;
+		border-radius: 3px 0px 0px 3px;
+	}
+	.searchbar .shorten-button
+	{
+		padding:10px;
+		width:100px;
+		background:#ee6123;
+		color:white;
+		border:0px;
+		float: left;
+		height:50px;
+		margin:0px;
+		border-radius: 0px 3px 3px 0px;
+		cursor: pointer;
+		box-shadow:0 0 0 1px #ee6123;
+	}
+	.side
+	{
+		display:flex;
+		padding-top:50px;
+	}
+	.side .b1
+	{
+		border:1px solid white;
+		padding:20px;
+		border-radius:2px;
+		background:transparent;
+		color:white;
+	}
+	.side p
+	{
+		padding:10px;
+	}
+	.side p a
+	{
+		color:white;
+	}
+	.mob-side
+	{
+		width:90%;
+		display: none;
+		padding:10px;
+		margin-bottom:10px;
+	}
+	.mob-side button
+	{
+		border:1px solid white;
+		padding:20px;
+		border-radius:2px;
+		margin-left:10px;
+		margin-right:10px;
+		flex:1;
+		font-size:0.6em;
+		background:transparent;
+		color:white;
+	}
+	
+	@media screen and (max-width: 900px) {
+		.main h1
+		{
+			font-size:25px;
+			padding:0px;
+			font-weight:normal;
+			width:100%;
+		}
+		.main h3
+		{
+			font-size:15px;
+			width:100%;
+		}
+	
+	}
+	
+	@media screen and (max-width:750px)
+	{
+		.side
+		{
+			display:none;
+		}
+		.mob-side
+		{
+			display:flex;
+		}
+		.fthead
+		{
+			padding:60px;
+			padding-bottom:30px;
+		}
+		.fthead h1
+		{
+			font-size:20px;
+		}
+		.fthead h3
+		{
+		width:100%;
+			font-size:12px;
+		}
+	}
+	@media screen and (max-width:450px)
+	{
+		.main h1
+		{
+			font-size:20px;
+			padding:0px;
+			font-weight:normal;
+			width:100%;
+		}
+		.main h3
+		{
+			font-size:10px;
+			width:100%;
+		}
+	}
+	
+	.mySlides {
+	  margin:10px;
+	  display:none;
+	  height:100px;
+	  width:150px;
+	}
+	.logo-slider
+	{
+	
+		display:flex;
+		justify-content:center;
+		max-width:100%;
+	}
+	.logo-slider button
+	{
+		
+		color:#e45212;
+		font-size:50px;
+		background:transparent;
+		border-width:0;
+	}	
+	.partners center
+	{
+		padding:40px 20px;
+		color:#e45212;
+		font-weight:bold;
+		line-height:0px;
+	}
+	
+	@media screen and (max-width:960px)
+	{
+		.partners
+		{
+			height:autos%;
+		}
+		.logo-slider
+		{
+			flex-direction:column;
+			align-items:center;
+			
+		}
+		.logo-slider button
+		{
+			display:none;
+		}
+		.partners center
+		{
+			font-size:16px;
+		}
+		.mySlides {
+		  margin:1px;
+		  height:100px;
+		  width:150px;
+		}
+	}
+	@media screen and (max-width:450px)
+	{
+		.partners center
+		{
+			font-size:10px;
+		}
+	}
+	
+	.bloghead
+	{
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		padding-top:90px;
+		padding-bottom:90px;
+		padding-left:150px;
+		padding-right:150px;
+	}
+	
+	.bloghead img
+	{
+		border:1px solid #dde0e2;
+		border-radius:3px;
+		
+	}
+	
+	
+	.bmcontent 
+	{
+		display:flex;
+		flex-direction:column;
+		padding:40px;
+		color:;
+	}
+	@media screen and (max-width:900px)
+	{
+		.bloghead
+		{
+			padding:10px;
+		}
+	}
+	@media screen and (max-width:750px)
+	{
+		
+		.bloghead
+		{
+			padding:10px;
+			flex-direction:column;
+		}
+		.bloghead img
+		{
+			width:90%;
+		}
+	}
+	.bmcontent h4
+	{
+		color:#70c6b2;
+	}
+	.bmcontent h2
+	{
+		color:rgb(228, 82, 18);
+		
+	}
+	.bmcontent button
+	{
+	
+		color:rgb(228, 82, 18);
+		border-color:rgb(228, 82, 18);
+		border-radius:5px;
+		width:100px;
+		background:transparent;
+		padding:10px;
+		
+		style:none;
+		
+	}	
+	.bmcontent a
+	{
+		text-decoration:none;
+	}
+	.bmcontent a:hover
+	{
+		text-decoration:underline;
+
+	}
+	
+</style>
+
+</head>
+<body id="body">
+    <header class="header">
+			
+			<div class="topnav" id="myTopnav">
+			  <a href="index.html"  style="padding:25px 25px 25px 16px; border-color:transparent; "><img src="logo_w.png" width="96" height="44"/></a>
+			  <a href="">LINK MANAGEMENT</a>
+			  <a href="">ENTERPRISE</a>
+			  <a href="" style="border-top:3px solid #fff;">RESOURCES</a>
+			  <a href="">BLOG</a>
+			  <a href="login.html" style="margin-left:40px;">LOGIN</a>
+			  <a href="singup.html">SIGN UP</a>
+			  <button class="buttonhead">GET ENTERPRISE</button>
+			  
+			 
+				<img src="menu_icon.png" class="icon" id="icons" height="35px" onclick="javascript:openNav()"/>
+			
+			</div>
+			<nav id="sidenav">
+					<ul>
+						<li style="margin-top:20px;">
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="">LINK MANAGEMENT</a>
+						</li>
+						<li>
+							<a href="">ENTERPRISE</a>
+						</li>
+						<li>
+							<a href="">RESOURCE</a>
+						</li>
+						<li>
+							<a href="">COMPANY</a>
+						</li>
+						<li>
+							<a href="">CONTACT</a>
+						</li>
+						<li>
+							<a href="">CAREERS</a>
+						</li>
+						<li>
+							<a href="">PRESSROOM</a>
+						</li>
+						<li>
+							<a href="">PARTNERS</a>
+						</li>
+						<li>
+							<a href="login.html">LOGIN</a>
+						</li>
+						<li>
+							<a href="signup.html">SIGNUP</a>
+						</li>
+					</ul>
+				</nav>
+			
+    </header>
+	<div class="bloghead">
+		
+		<img src="blogmain.png"/>
+		<div class="bmcontent">
+			<h4>WEBINAR</h4>
+			<a href=""><h2>[DEMO] RETHINKING THE LINK WITH BITLY ENTERPRISE</h2></a>
+			<p>
+			Bitly Enterprise is a link management platform that will help you optimize every customer touchpoint 
+			- all with the power of the link. In this demo, you'll learn about how you can leverage features 
+			like Bitly OneView, Bitly Brand Manager, and more to build a cross-channel customer experience 
+			that can be easily managed through an intuitive dashboard.
+			</p>
+			
+			<button>Watch</button>
+		
+		</div>
+		
+	</div>
+    
+    <div class="feature" style="background:#f7fbfd;">
+			<center style=" color:#464c50; font-weight:bold;  flex: 0 0 100%;">
+			
+			<button style="background:#000; border-width:0px; color:#fff;">ALL RESOURCES</button>
+			<button style="color:red; border-width:none; border:1px solid red;">EBOOKS</button>
+			<button style="color:blue; border-width:none; border:1px solid blue;">WEBINARS</button>
+			<button style="color:green; border-width:none; border:1px solid green;">CASESTUDIE</button>
+			<button style="color:cyan; border-width:none; border:1px solid cyan;">BLOG</button>
+			
+			</center>
+            <div class="features_v2" >
+			<img src="bs1.png" width="300px"/>
+			<a href=""><h4 class="name">WEBINAR</h4></a>
+			<a href=""><h4 class="info">[Live Webinar] How to Choose the Bitly Plan that’s Right for You</h4></a>
+			</div>
+            <div class="features_v2">
+			<img src="bs2.png" width="300px"/>
+			<a href=""><h4 class="name">EBOOK</h4></a>
+			<a href=""><h4 class="info">Bitly 301: Beyond Branding & Shortening</h4></a>
+			</div>
+			<div class="features_v2">
+			<img src="bs4.png" width="300px"/>
+			<a href=""><h4 class="name">EBOOK</h4></a>
+			<a href=""><h4 class="info">37 WAYS BRANDS USE BITLY</h4></a>
+			</div>
+			<div class="features_v2" >
+			<img src="bs5.png" width="300px"/>
+			<a href=""><h4 class="name">WEBINAR</h4></a>
+			<a href=""><h4 class="info">[DEMO] Calculating Social ROI Using Bitly</h4></a>
+			</div>
+            <div class="features_v2">
+			<img src="bs6.png" width="300px"/>
+			<a href=""><h4 class="name">EBOOK</h4></a>
+			<a href=""><h4 class="info">HOW TO BUILD AN WEBSITE</h4></a>
+			</div>
+			<div class="features_v2">
+			<img src="bs7.png" width="300px"/>
+			<a href=""><h4 class="name">EBOOK</h4></a>
+			<a href=""><h4 class="info">137 WAYS BRANDS USE BITLY</h4></a>
+			</div>
+			<div class="features_v2" >
+			<img src="bs13.png" width="300px"/>
+			<a href=""><h4 class="name">WEBINAR</h4></a>
+			<a href=""><h4 class="info">[DEMO] RETHINKING THE LINK WITH BITLY ENTERPRISE</h4></a>
+			</div>
+            <div class="features_v2">
+			<img src="tf2.png" width="300px"/>
+			<a href=""><h4 class="name">EBOOK</h4></a>
+			<a href=""><h4 class="info">HOW TO BUILD AN ANDROID APP</h4></a>
+			</div>
+			<div class="features_v2">
+			<img src="tf3.png" width="300px"/>
+			<a href=""><h4 class="name">EBOOK</h4></a>
+			<a href=""><h4 class="info">77 WAYS BRANDS USE ANDROID STUDIO</h4></a>
+			</div>
+			<div class="features_v2" >
+			<img src="bs8.png" width="300px"/>
+			<a href=""><h4 class="name">WEBINAR</h4></a>
+			<a href=""><h4 class="info">[DEMO] RETHINKING THE LINK WITH BITLY ENTERPRISE</h4></a>
+			</div>
+            <div class="features_v2">
+			<img src="bs9.png" width="300px"/>
+			<a href=""><h4 class="name">EBOOK</h4></a>
+			<a href=""><h4 class="info">HOW TO BUILD AN INFLUENCER MARKETING PROGRAM</h4></a>
+			</div>
+			<div class="features_v2">
+			<img src="bs10.png" width="300px"/>
+			<a href=""><h4 class="name">EBOOK</h4></a>
+			<a href=""><h4 class="info">37 WAYS BRANDS USE BITLY</h4></a>
+			</div>
+			<div class="features_v2" >
+			<img src="bs11.png" width="300px"/>
+			<a href=""><h4 class="name">WEBINAR</h4></a>
+			<a href=""><h4 class="info">[DEMO] RETHINKING THE LINK WITH BITLY ENTERPRISE</h4></a>
+			</div>
+            <div class="features_v2">
+			<img src="bs12.png"width="300px"/>
+			<a href=""><h4 class="name">EBOOK</h4></a>
+			<a href=""><h4 class="info">HOW TO BUILD AN INFLUENCER MARKETING PROGRAM</h4></a>
+			</div>
+			
+    </div>
+	<aside  class="analytics">
+
+	<button>CREATE YOUR FREE ACCOUNT</button>
+	<a href=""><h5 style="color:#fff;">Take a tour of enterprise &rarr;</h5></a>
+	</aside>
+    <footer class="footer">
+        <div class="links">
+			<a href="">ABOUT</a>
+			<a href="">BLOG</a>
+			<a href="">SUPPORT</a>
+			<a href="">CONTACT</a>
+			<a href="">DEVELOPERS</a>
+			<a href="">PRIVACY POLICY</a>
+			<a href="">TERMS OF SERVICE</a>
+			<a href="">PARTNERS</a>
+			<a href="">CAREERS</a>
+		</div>
+		<div><img src="footer_logo.png" width="70px"/></div>
+        <div class="social">
+			<img src="social1.png" width="32px" height="32px"/>
+			<img src="social2.png" width="32px" height="32px"/>
+			<img src="social3.png" width="32px" height="32px"/>
+			<img src="social4.png" width="32px" height="32px"/>
+		</div>
+		<p>&#169; 2019 Bitly™  Handmade in NYC</p>
+    </footer>
+	
+<script>
+var snav=document.getElementById("sidenav");
+var body=document.getElementById("body");
+var j=0;
+function openNav()
+{	
+	if(j>0)
+	{
+		document.body.scrollTop = 0;
+
+		body.style.webkitTransform="";
+		snav.style.webkitTransform="translate3d(250px, 0, 0)";
+		document.getElementById("myTopnav").style.height="100px";
+		j=0;
+		snav.style.margin="0 -250px 0 0";
+		snav.style.display="none";
+		//snav.style.width="0px";
+		
+	}
+	else
+	{
+		document.body.scrollTop = 0;
+		snav.style.margin="0";
+		snav.style.display="block";
+		body.style.webkitTransform="translate3d(-250px, 0, 0)";
+		//snav.style.webkitTransform="translate3d(250px, 0, 0)";
+		j++;
+		
+	}
+	
+}
+function scrollFunction() {
+    var scrollPos = document.body.scrollTop;
+	//console.log(scrollPos);
+    if (scrollPos > 500) {
+        document.getElementById("myTopnav").style.position = "fixed";
+        document.getElementById("myTopnav").style.top = "0px";
+        
+        document.getElementById("myTopnav").style.right = "0px";
+		document.getElementById("myTopnav").style.background="#e45212";
+		
+		
+		document.getElementById("myTopnav").style.left="0";
+
+    } else {
+        document.getElementById("myTopnav").style.position = "static";
+		//document.getElementById("myTopnav").style.background="transparent";
+      //  document.getElementById("myTopnav").style.top = "40px";
+    }
+}
+
+
+
+function plusDivs(n) {
+ 
+ if(n==-1)
+ {
+ 	jj=(slideIndex + n-4);
+ }
+  showDivs(slideIndex += n);
+}
+
+
+window.onscroll = scrollFunction;
+</script>
+</body>
+</html>
